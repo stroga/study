@@ -1,0 +1,62 @@
+	.gallery {
+		width: 620px;
+		background-color: #DFDFDF;
+		border-radius: 35px;
+		float: left;
+		margin: 40px;
+	}
+
+	.big-picture {
+		text-align: center;
+	}
+
+	.big-picture img {
+	
+		border-radius: 20px;
+	}
+
+	.previews {
+		list-style: none;
+		width: 99999px;
+	}
+
+	li {
+		float: left;
+		border-radius: 15px;
+		margin: 7px;
+		padding: 5px;
+	}
+
+	.previews img {
+		display: block;
+		border-radius: 30px;
+	}
+
+	.previews li:hover {
+		background-color: #332F30;
+		border-radius: 35px;
+	}
+
+	.arrow {
+		position: relative;
+		text-decoration: none;
+		top: 580px;
+	}
+
+	.left-arrow {
+		left: -30px;
+	}
+
+	.right-arrow {
+		left: 585px;
+	}
+
+	.container {
+		width: 620px;
+		overflow: hidden;
+	}
+
+	.current {
+		background-color: #332F30;
+		border-radius: 35px;
+	}
