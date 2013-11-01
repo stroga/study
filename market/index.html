@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Market</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<script type="text/javascript" src="javascript/jquery_1.10.2.js"></script>
+	<script type="text/javascript" src="javascript/popup.js"></script>
+	<script type="text/javascript" src="javascript/main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="wrapper">
+			<div  class="categories">
+				<ul>
+					<li>
+						<a href="#drinks">drinks</a>
+					</li>
+					<li>
+						<a href="#food">food</a>
+					</li>
+					<li>
+						<a href="#furniture">furniture</a>
+					</li>
+					<li>
+						<a href="#tools">tools</a>
+					</li>
+					<li>
+						<a href="#kitchen_utensils">Kitchen utensils</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="content">
+				<div class="sort">
+					Sort by
+					<span class="sortByName">name</span>
+					<span class="sortByPrice">price</span>
+				</div>
+				<div class="headers">
+					<span>name</span>
+					<span>quantity</span>
+					<span>price</span>
+				</div>
+				<div class="goods"></div>
+			</div>
+
+			<div  class="cart" style="display:none">
+			<table>
+				<tr class="head">
+					<td>Goods:</td>
+					<td>Quantity:</td>
+					<td>Price:</td>
+					<td class="close">
+						<img src="img/close1.png">
+					</td>
+				</tr>
+
+				<tr class="order"></tr>
+				<tr class="total">
+					<td>Total price:</td>
+					<td></td>
+					<td class="sum">0</td>
+					<td class="clear">
+						<button>Clear bag</button>
+					</td>
+				</tr>
+			</table>
+			</div>
+			<!-- <div class="mini_cart">
+				<div>
+					<p>Total items:</p>
+					<p>Total price:</p>
+				</div>
+			</div> -->
+			<div class="mini_cart">
+				<table >
+					<tr class="items">
+						<td></td>
+						<td>ITEMS</td>
+						<td class="quantity">0</td>
+					</tr>
+					<tr class="price">	
+						<td></td>
+						<td>PRICE</td>
+						<td class="sum">0</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>
+							<button  class="clear">Clear bag</button>
+						</td>
+						
+					</tr>
+					
+				</table>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>
