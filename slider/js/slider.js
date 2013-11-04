@@ -87,6 +87,34 @@ function computedStyle (elem) {
 }
 
 /*####################################################################################*/
+var Observer = {
+    events: [],
+    listen: function(id, callback) {
+      if (!this.events[id]) {
+        this.events[id] = [];
+      }
+      return this.events[id].push(callback);
+    },
+    trigger: function(id, data) {
+      var callback,
+      	key,
+      	_ref,
+      	_results;
+      	
+      if (data == null) {
+        data = {};
+      }
+      if (this.events[id]) {
+        _ref = this.events[id];
+        _results = [];
+        for (key in _ref) {
+          callback = _ref[key];
+          _results.push(callback(data));
+        }
+        return _results;
+      }
+    }
+  };
 
 /*#################################   MAIN FUNCTIONS   ######################*/
 	
@@ -101,20 +129,16 @@ function computedStyle (elem) {
 		this.modulo = 100/this.maxLeft;
 		var self = this;
 
-	}
-
-
-
-	CreateSlider.prototype.on = function (obj) {
+		(function moveSlider () {
 		
-		var self = this;
+		
 		var moveEvent;
 
-		bindEvent(this.slider, "dragstart", function (event) {
+		bindEvent(self.slider, "dragstart", function (event) {
 			cancelDefaultEvent (event);
 		});
 		
-		bindEvent(this.slider, "mousedown", function (event) {
+		bindEvent(self.slider, "mousedown", function (event) {
 			cancelDefaultEvent (event);
 			event = fixEvent(event);
 			if (event.which === 1) {
@@ -136,17 +160,26 @@ function computedStyle (elem) {
 					}
 					self.currentPosition = Math.round(newLeft*self.modulo);
 				    self.slider.style.left = newLeft + 'px';
-				    obj.slide(self.currentPosition);
+				    Observer.trigger("slide", self.currentPosition);
 				});
 			}
 		});
 	
 		bindEvent (document, "mouseup", function (event) {
-			obj.change(self.currentPosition);
+			Observer.trigger("change", self.currentPosition);
 			unbindEvent(document, "mousemove", moveEvent);
 		});
 
+	})();
+
 	}
+
+	CreateSlider.prototype.on = function (obj) {
+		var self = this;
+		Observer.listen("slide", obj.slide);
+		Observer.listen("change", obj.change);
+	};
+
 return CreateSlider;
 
 })();
@@ -155,10 +188,10 @@ return CreateSlider;
 var slider = new Slider(document.querySelector(".first"));
 slider.on({
 	slide: function(value) {
-    	document.querySelector(".slide_value span").innerText = value;
+    	document.querySelector(".slide_value span").innerHTML = value;
 	},
 	change: function(value) {
-		document.querySelector(".change_value span").innerText = value;
+		document.querySelector(".change_value span").innerHTML = value;
 		document.querySelector("[name=result]").value = value;
 	}
 });
