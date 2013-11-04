@@ -1,130 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset='utf-8' />
-	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
-	
 
-	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-	<script type="text/javascript" src="js/helpers.js"></script>
-	<title>Me</title>
-</head>
-<body>
-	<div class="wrapper">
-		<div class="sidebar">
-			<div class="res_b" >
-				<img src="new_img/first_all.png">
-			</div>
-			<div class="resume">
-				<a href="#resume">Резюме</a>
-			</div>
-			<div class="task_b" >
-				<img src="new_img/second_all.png">
-			</div>
-			<div class="tasks">
-				<a href="#tasks">Примеры работ</a>
-			</div>
-		</div>
-		<div class="content">
-			<div class="resume_page">
-				<div class="header">
-					<div class="text_content">
-						<h1>Круть Александр Анатольевич</h1>
-						<div class="about">
-							<p>25.06.1986</p>
-							<p>Днепропетровск</p>
-							<p>(095) 728 08 43</p>
-							<a href="mailto:krruut@gmail.com">krruut@gmail.com</a>
-							<p>Skype: <a href="skype:st.roga?chat">st.roga</a></p>
-						</div>
-					</div>
-					<div class="foto">
-						<img src="new_img/me.png" width="250" height="250">
-					</div>
-				</div>
-				<div class="resume_content">
-					<div class="skills">
-						<h2>Профессиональные навыки</h2>
-						<p>
-							html, css, javascript, jQuery
-						</p>
-						<ol>
-						<li>git (в рамках создания репозитория, веток, githab pages)</li>
-						<li>cms (joomla)</li>
-						<li>denwer (тестировал сайты)</li>
-						<li>MySQL (работал с базой данных из PHP)</li>
-						</ol>
-					</div>
-					<div class="courses">
-						<h2>Курсы</h2>
-						<p>
-							Окончил курсы javascript в "Maxymiser Academy". Во время обучения выполнял различные задания, реализация которых прилагается 
-							<a href="#tasks"> &nbsp;>>.</a>
-						</p>
-						<p>Двухгодичные курсы английского языка при ДНУ им. О. Гончара.</p>
-					</div>
-					<div class="education">
-						<h2>Образование</h2>
-						<p>
-							ДНУ им.О.Гончара</br>
-							физико-технический факультет</br>
-							2003 - 2009
-						</p>
-					</div>
-				</div>
-			</div> 
-			<div class="code_page hide">
-				<div class="links">
-					<h2>Примеры работ</h2>
-					<ul>
-						<li>
-							<p>1. Реализовать галерею</p>
-							<p>Требования:</p>
-							<ol>
-								<li>Использовать разные изображения для превьюшек и большого изображения (в этом и заключается цимес)</li>
-								<li>Автоматически листать на следующее изображение через 5 секунд</li>
-								<li>Не листать галерею после того, как пользователь кликнул на одну из превьюшек</li>
-								<li>Количество галерей на странице может быть любым</li>
-								<li>Количество изображений в галерее может быть любым</li>
-								<li>Галерею можно листать с клавиатуры. Но только одну из всех галерей на странице. Листается та, с которой пользователь работал в последний раз. Или над которой находится мышка в данный момент.</li>
-								<li>Должно работать в 8 ие.</li>
-							</ol>
-							<p>Реализация:&nbsp;<a href="Prototypes/index.html">Галерея&nbsp;</a> <span>Код:&nbsp;<a href="https://github.com/KrutA/study/tree/master/Prototypes/css">Css&nbsp;</a> <a href="https://github.com/KrutA/study/tree/master/Prototypes/js">JavaScript</a></span></p>
-						</li>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Study : " />
 
-						<li>
-							<p>2. Реализовать многоуровневое контекстное меню как в Windows. Открываться должно по правой кнопке в любой части страницы. </p>
-							<p>Реализация:&nbsp;<a href="Context menu/index.html">Контекстное меню&nbsp;</a> <span>Код:&nbsp;<a href="https://github.com/KrutA/study/tree/master/Context%20menu/css">Css&nbsp;</a> <a href="https://github.com/KrutA/study/tree/master/Context%20menu/js">JavaScript</a></span></p>
-						</li>
-						<li>
-							<p>3. Реализовать инпут (слайдер). Библиотеку jquery не использовать. Подписку на события слайдера сделать через свой метод on.</p>
-							<p>Реализация:&nbsp;<a href="slider/index.html">Слайдер&nbsp;</a> <span>Код:&nbsp;<a href="https://github.com/KrutA/study/blob/master/slider/css/style.css">Css&nbsp;</a> <a href="https://github.com/KrutA/study/blob/master/slider/js/slider.js">JavaScript</a></span></p>
-						</li>
-						<li>
-							<p>4. Реализовать инпут-пароль, в момент ввода проверять сложность вводимого пароля. Сложность градировать по 5-бальной шкале. Показывать уровень сложности пароля под полем ввода. Детали реализации функции проверки сложности пароля не интересны (можно считать количество символов, например).
-							</p>
-							<p>Написать валидатор, который будет проверять верность вводимого email-а. Каждую ошибку сопровождать соответствующим сообщением. Возможные ошибки: не заполненное поле, не валидный email, уже занятый email. Предполагаем, что список занятых email-лов есть, и он хранится в глобальной переменной.
-							</p>
-							<p>Реализация:&nbsp;<a href="Forms/index.html">Email и Password валидация&nbsp;</a> <span>Код:&nbsp;<a href="https://github.com/KrutA/study/tree/master/Forms/css">Css&nbsp;</a> <a href="https://github.com/KrutA/study/tree/master/Forms/js">JavaScript</a></span></p>
-						</li>
-						<li>
-							<p>5. Реализовать функционал подобный этому:
-								<a href="http://jscourses.github.io/simple-shop/">Пример</a>
-								. Плюс, дополнить его следующими возможностями:
-								<ol>
-									<li>сортировка таблицы продуктов (по имени, цене)</li>
-									<li>запоминание открытой вкладки через url</li>
-									<li>удаление продуктов из корзины</li>
-									<li>запоминание продуктов в корзине (после перезагрузки корзина не должна сбрасываться)</li>
-								</ol>
-							</p>
-							<p>Реализация:&nbsp;<a href="market/index.html">Market&nbsp;</a><span>Код:&nbsp;<a href="https://github.com/KrutA/study/tree/master/Forms/css">Css&nbsp;</a> <a href="https://github.com/KrutA/study/tree/master/Forms/js">JavaScript</a></span></p>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script type="text/javascript" src="js/main.js"></script>
-</body>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Study</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/KrutA/study">View on GitHub</a>
+
+          <h1 id="project_title">Study</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/KrutA/study/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/KrutA/study/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="krut-alexandr" class="anchor" href="#krut-alexandr"><span class="octicon octicon-link"></span></a>Krut’ Alexandr</h1>
+
+<p>25.06.1986<br>
+Ukraine, Dnipropetrovsk<br>
+(095) 728 08 43<br><a href="mailto:krruut@gmail.com">krruut@gmail.com</a><br>
+Skype: <a>st.roga</a></p>
+
+<hr><h2>
+<a name="work-examples" class="anchor" href="#work-examples"><span class="octicon octicon-link"></span></a>Work examples:</h2>
+
+<ul>
+<li>
+<a href="https://github.com/KrutA/study/blob/master/Context%20menu/index.html">Context menu</a> 
+
+<ul>
+<li><a href="https://github.com/KrutA/study/blob/master/Context%20menu/css/main.css">css</a></li>
+<li><a href="https://github.com/KrutA/study/tree/master/Context%20menu/js">js</a></li>
+</ul>
+</li>
+<li>
+<a href="https://github.com/KrutA/study/blob/master/Prototypes/index.html">Gallery</a>
+
+<ul>
+<li><a href="https://github.com/KrutA/study/tree/master/Prototypes/css">css</a></li>
+<li><a href="https://github.com/KrutA/study/tree/master/Prototypes/js">js</a></li>
+</ul>
+</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Study maintained by <a href="https://github.com/KrutA">KrutA</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
 </html>
