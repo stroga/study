@@ -215,7 +215,7 @@ function createContextMenu() {
             if (!hasClass(allLi[i], "repository")) {
                 bindEvent(allLi[i], "mousedown", getClickedMenuItem);
             }
-            
+
         }
     })();
 

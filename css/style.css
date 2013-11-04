@@ -1,0 +1,230 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*-----It was reset---------*/
+
+body {
+	background: url(../new_img/koga06.jpg) bottom fixed;
+}
+
+.wrapper {
+	position: relative;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	margin: 50px auto;
+	left: 28px;
+	height: 1776px;
+	width: 1000px;
+	line-height: 1.5em;
+	box-shadow: 25px -25px 40px 3px rgba(0,0,0,0.4) ;
+	background-image: url(../new_img/bg.png);
+	background-repeat: no-repeat;
+}
+
+.header img {
+	padding: 5px;
+	border: 5px double #D6943D;
+}
+
+.header {
+	padding-top: 30px;
+	position: relative;
+	width: 90%;
+	text-align: center;
+}
+
+h1 {
+	font-size: 26px;
+	line-height: 2.5em;
+}
+
+h2 {
+	font-size: 23px;
+	line-height: 2em;
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 2em;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+/*first page*/
+.resume_content p {
+	padding-left: 25px;
+}
+
+.text_content {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	display: inline-block;
+	padding-left: 30px;
+	vertical-align: top;
+	text-align: left;
+}
+
+.foto {
+	display: inline-block;
+	padding-left: 50px;
+}
+
+.resume_content {
+	width: 85%;
+	margin: 50px auto;
+	padding-top: 50px;
+	border-top: 1px solid #D6943D;
+}
+
+.resume_content a {
+	text-decoration: none;
+	color: #D6943D;
+}
+
+.resume_content p {
+	padding-bottom: 10px;
+}
+
+.resume_content div {
+	padding-bottom: 50px;
+}
+
+.sidebar {
+	width: 0;
+	float: left;
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: #665742;
+	font-size: 24px;
+}
+
+.res_b {
+	position: relative;
+	left: -58px;
+	overflow: hidden;
+	width: 58px;
+}
+
+
+.task_b {
+	position: relative;
+	left: -58px;
+	overflow: hidden;
+	width: 58px;
+}
+
+.task_b img {
+	margin-left: -58px;
+}
+
+.task_code_b {
+	position: relative;
+	left: -58px;
+	overflow: hidden;
+	width: 58px;
+}
+
+.task_code_b img {
+	margin-left: -58px;
+}
+
+.tasks,
+.resume {
+	position: relative;
+	display: inline-block;
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg); 
+	-webkit-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.resume {
+	top: -150px;
+	left: -65px;
+}
+
+.tasks {
+	width: 12em;
+	top: -170px;
+	left: -117px;
+}
+
+.skills p {
+	font-weight: bold;
+}
+
+.skills li {
+	list-style-type: circle;
+}
+
+li {
+	padding: 10px;
+}
+
+/*second page*/
+
+.links {
+	width: 85%;
+	margin: 50px auto;
+}
+
+.links h2 {
+	text-align: center;
+}
+
+.links ol {
+	list-style-type: circle;
+}
+
+ol li {
+	margin-left: 30px;
+}

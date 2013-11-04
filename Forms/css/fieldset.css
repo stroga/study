@@ -11,182 +11,171 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-    display: block;
+	display: block;
 }
 body {
-    line-height: 1;
+	line-height: 1;
 }
 ol, ul {
-    list-style: none;
+	list-style: none;
 }
 blockquote, q {
-    quotes: none;
+	quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+	content: '';
+	content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 
 /*-----It was reset---------*/
 
-	.wrapper {
-		width: 200px;
-		font: 12px Verdana, sans-serif;
-		color: #333333;
-		margin: 0 auto;
-	}
-
-	legend {
-		font-size: 14px;
-	}
-
-	fieldset {
-		padding: 10px 10px;
-		background-color: #E5FFB9;
-		border: 1px solid #cccccc;
-	}
-
-	.first {
-		background-image: url(../img/1.png);
-
-		background-repeat: no-repeat;
-		background-position: top right; 
-	}
-
-	
-	p {
-		padding: 5px;
-		text-align: center;
-	}
-
-	input {
-		width: 150px;
-	}
-
-	.text_label {
-		font-weight: bold;
-	}
-
-	/*email*/
-
-	.message_email {
-		height: 35px;
-	}
-
-	.show {
-		visibility: visible;
-	}
-
-	.hide {
-		visibility: hidden;
-	}
-	/*password*/
-
-	.no_js .wrapper,
-	.no_js .password_result {
-		display: none;
-	}
-
-
-	
-	.password {
-		margin:.2em;
-
-	}
-
-	.password_result {
-		height: 65px;
-		
-	}
-
-	.line {
-		margin: 0 auto;
-		width: 0;
-		height: .2em;
-	}
-
-	.message {
-		color: #47433A;
-		display: none;
-	}
-
-	.message_show {
-		display: block;
-		color: #47433A;
-	}
-
-	.second_message {
-		display: none;
-	}
-
-	.second_message_show {
-		display: block;
-	}
-
-	.line-empty {
-		width: 0;
-	}
-
-	.line20 {
-		margin: 0 auto;
-		
-		background-color: red;
-		width: 30px;
-		height: .2em;
-	}
-
-	.line40 {
-		margin: 0 auto;
-		
-		background-color: #CF6916;
-		width: 60px;
-		height: .2em;
-	}
-
-	.line60 {
-		margin: 0 auto;
-	
-		background-color: #EAEF18;
-		width: 90px;
-		height: .2em;
-	}
-
-	.line80 {
+.wrapper {
+	width: 200px;
+	font: 12px Verdana, sans-serif;
+	color: #333333;
 	margin: 0 auto;
-		
-		background-color: #7DEF18;
-		width: 120px;
-		height: .2em;
-	}
+}
 
-	.line100 {
-		margin: 0 auto;
-	
-		background-color: green;
-		width: 150px;
-		height: .2em;
-	}
+legend {
+	font-size: 14px;
+}
 
-	.not_match {
-		visibility: hidden;
-	}
+fieldset {
+	padding: 10px 10px;
+	background-color: #E5FFB9;
+	border: 1px solid #cccccc;
+}
 
-	.not_match_shown {
-		visibility: visible;
-	}
+.first {
+	background-image: url(../img/1.png);
+	background-repeat: no-repeat;
+	background-position: top right; 
+}
+
+p {
+	padding: 5px;
+	text-align: center;
+}
+
+input {
+	width: 150px;
+}
+
+.text_label {
+	font-weight: bold;
+}
+
+/*email*/
+
+.message_email {
+	height: 35px;
+}
+
+.show {
+	visibility: visible;
+}
+
+.hide {
+	visibility: hidden;
+}
+/*password*/
+
+.no_js .wrapper,
+.no_js .password_result {
+	display: none;
+}
+
+.password {
+	margin:.2em;
+}
+
+.password_result {
+	height: 65px;
+}
+
+.line {
+	margin: 0 auto;
+	width: 0;
+	height: .2em;
+}
+
+.message {
+	color: #47433A;
+	display: none;
+}
+
+.message_show {
+	display: block;
+	color: #47433A;
+}
+
+.second_message {
+	display: none;
+}
+
+.second_message_show {
+	display: block;
+}
+
+.line-empty {
+	width: 0;
+}
+
+.line20 {
+	margin: 0 auto;
+	background-color: red;
+	width: 30px;
+	height: .2em;
+}
+
+.line40 {
+	margin: 0 auto;
+	background-color: #CF6916;
+	width: 60px;
+	height: .2em;
+}
+
+.line60 {
+	margin: 0 auto;
+	background-color: #EAEF18;
+	width: 90px;
+	height: .2em;
+}
+
+.line80 {
+	margin: 0 auto;
+	background-color: #7DEF18;
+	width: 120px;
+	height: .2em;
+}
+
+.line100 {
+	margin: 0 auto;
+	background-color: green;
+	width: 150px;
+	height: .2em;
+}
+
+.not_match {
+	visibility: hidden;
+}
+
+.not_match_shown {
+	visibility: visible;
+}

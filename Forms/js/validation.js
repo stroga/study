@@ -103,7 +103,7 @@
         var emailForm = new ValidateEmail(document.querySelector("[name=email_form]"));
     })();
 
-/*############################ Password verification ###############################*/
+    /*############################ Password verification ###############################*/
 
     // Password verification function 
     (function() {
@@ -141,6 +141,7 @@
             }
         }
         //password verification (length of the password must be more than 5 different simbols)
+
         function check() {
             var str = input.value;
             var lengthOfInputContent = input.value.length;
@@ -183,6 +184,7 @@
         }
 
         //is password field has the equal symbols?
+
         function isMatchOrNot(strOfInput) {
             var arrOfSameElements = [];
             var firstElem = strOfInput[0];
@@ -207,6 +209,7 @@
         }
 
         //are password input and password confirmation input match?
+
         function isTheSamePassword() {
             if (confirm.value !== input.value) {
                 removeClass(message, "not_match");
