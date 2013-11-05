@@ -1,0 +1,65 @@
+.repository {
+    background: no-repeat;
+    background-image: url(http://s2.ipicture.ru/uploads/20130908/b4V7wZH6.png);
+    background-size: 8px;
+    background-position: 5em;
+
+}
+.my_menu_js {
+    position:absolute;
+}
+
+.menu_js {
+    position: absolute;
+    width:6.5em;
+    margin:0;
+    background-color:#F0F0F0;
+    display:none;
+    padding: 0;
+    border-top:0.2em solid grey;
+    border-bottom:0.2em solid grey;
+    border-left:0.2em solid grey;
+    border-right:0.2em solid grey;
+}
+
+.hovered {
+    background-color: #DFDFDF;
+    cursor: default;
+}
+
+.unhovered {
+    background-color:#F0F0F0;
+}
+
+li {
+    padding: 0 1em;
+    list-style:none;
+    background-color: #F0F0F0;
+    line-height: 2em;
+}
+
+.container {
+    display:none;
+    position:absolute;
+    margin-left:5.5em;
+    margin-top:-2em;
+    width:6.5em;
+    background-color:#F0F0F0;
+    padding: 0;
+    border-top:0.2em solid grey;
+    border-right:0.2em solid grey;
+    border-bottom:0.2em solid grey;
+    border-left:0.2em solid grey;
+}
+
+.sub {
+    background-color: #DFDFDF;
+}
+
+.blocked {
+    display: block;
+}
+
+.nonvisible {
+    display: none;
+}

@@ -1,0 +1,285 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*-----Hereinabove was reset---------*/
+
+/*General properties*/
+html {
+    background-color: #273341;
+}
+
+body {
+    background:url(../img/main_bg.jpg) no-repeat bottom fixed;
+}
+
+.page-wrapper {
+    width: 600px;
+    margin:0 auto;
+    background-image: url(../img/container_bg.gif);
+    background-repeat: repeat-y;
+    font-family: verdana, arial, "sans-serif";
+}
+
+header {
+    width: 596px;
+    height: 132px;
+    margin-left: 2px;
+    background-image: url(../img/intro_bg.jpg);
+}
+
+header:hover {
+    background-position: 0 -132px;
+}
+
+h1, h2 {
+    display: none;
+}
+
+/*##################################################################
+#####################   LEFT COLUMN   #################################
+####################################################################*/
+
+/*General properties*/
+.preamble, 
+.main {
+    width: 360px;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: left;
+    padding-right: 60px;
+}
+
+.preamble p, 
+.main p {
+    margin: 15px 0;
+    color: #919AA4;
+    padding-right: 60px;
+}
+
+.summary p:first-child {
+    display: none;
+}
+
+.summary p:last-child {
+    height: 47px;
+    width: 292px;
+    margin-right: 2px;
+    padding-top: 10px;
+    float: right;
+    font-size: 11px;
+    text-align: center;
+    color: #92A0AB;
+    background-image: url(../img/quickSum_bg.gif);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.summary p:last-child a {
+    text-decoration: none;
+    border-bottom: 2px solid #506067;
+    color: #92A0AB;
+}
+
+.summary p:last-child a:hover {
+    color: #B4C2B6;
+    border-bottom-color: #708089;
+}
+
+.preamble p,
+.explanation p,
+.participation p,
+.benefits p,
+.requirements p {
+	padding-left: 10px;
+}
+/*Adding images-headers in left column */
+.preamble h3 {
+    text-indent: -5000px;
+    height: 22px;
+    margin: 20px 0;
+    margin-left: 3px;
+    background-image: url(../img/preamble_title.gif);
+    background-repeat: no-repeat;
+}
+
+.explanation h3 {
+    text-indent: -5000px;
+    height: 22px;
+    margin: 20px 0;
+    margin-left: 3px;
+    background-image: url(../img/explain_title.gif);
+    background-repeat: no-repeat;
+}
+
+.participation h3 {
+    text-indent: -5000px;
+    height: 22px;
+    margin: 20px 0;
+    margin-left: 3px;
+    background-image: url(../img/part_title.gif);
+    background-repeat: no-repeat;
+}
+
+.benefits h3 {
+    text-indent: -5000px;
+    height: 22px;
+    margin: 20px 0;
+    margin-left: 3px;
+    background-image: url(../img/benefits_title.gif);
+    background-repeat: no-repeat;
+}
+
+.requirements h3 {
+    text-indent: -5000px;
+    height: 22px;
+    margin: 20px 0;
+    margin-left: 2px;
+    background-image: url(../img/req_title.gif);
+    background-repeat: no-repeat;
+}
+
+.preamble:hover,
+.explanation:hover,
+.participation:hover,
+.benefits:hover,
+.requirements:hover {
+    background-image: url(../img/contentHover_bg.gif);
+    background-repeat: no-repeat;
+    background-position: 3px 22px;
+}
+
+.main a {
+    font-weight: bold;
+    color: #919AA4;
+}
+
+.main a:hover {
+    color: #B3BCC6;
+}
+
+/*##################################################################
+#####################   SIDEBAR   #################################
+####################################################################*/
+
+/*positioning of the sidebar*/
+.sidebar {
+    position: absolute;
+    width: 237px;
+    height: 501px;
+    margin-left: 361px;
+    top: 169px;
+    padding-top: 35px;
+    background-image: url(../img/linkList_bg.gif);
+    background-repeat: no-repeat;
+    font-size: 10px;
+    line-height: 12px;
+}
+/*indent between lines*/
+#css-zen-garden .sidebar li {
+    padding: 0.7em 0;
+}
+
+#css-zen-garden .sidebar a:hover {
+    color: #FF5500;
+}
+/*Adding images-headers in right column */
+.design-selection h3 {
+    height: 38px;
+    width: 237px;
+    text-indent: -5000px;
+    margin-top: -25px;
+    background-image: url(../img/selectDesign_title.gif);
+    background-repeat: no-repeat;
+}
+
+.design-archives h3 {
+    height: 29px;
+    width: 237px;
+    text-indent: -5000px;
+    margin-top: 10px;
+    background-image: url(../img/larchives_title.gif);
+    background-repeat: no-repeat;
+}
+
+.zen-resources h3 {
+    height: 29px;
+    width: 237px;
+    text-indent: -5000px;
+    margin-top: 10px;
+    background-image: url(../img/lresources_title.gif);
+    background-repeat: no-repeat;
+}
+/*Beautifying of text right column */
+.design-selection nav,
+.design-archives nav,
+.zen-resources ul {
+    padding-left: 15px;
+    color: #909FA7;
+}
+
+.design-selection nav li a:first-child {
+   font-weight: bold;
+   color: #909FA7;
+}
+
+.design-selection nav li a:last-child {
+   text-decoration: none;
+   color: #909FA7;
+}
+
+.design-archives a,
+.zen-resources a {
+    color: #909FA7;
+}
+/*It's footer time*/
+footer {
+    height: 30px;
+    width: 356px;
+    text-align: center;
+    background-color: #101C28;
+    margin-left: 3px;
+    line-height: 30px;
+    border-top: 1px solid #68717A;
+}

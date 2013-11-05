@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+	
+
+	<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+	<script type="text/javascript" src="js/helpers.js"></script>
+	<title>Me</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="sidebar">
+			<div class="res_b" >
+				<img src="new_img/first_all.png">
+			</div>
+			<div class="resume">
+				<a href="#resume">Резюме</a>
+			</div>
+			<div class="task_b" >
+				<img src="new_img/second_all.png">
+			</div>
+			<div class="tasks">
+				<a href="#tasks">Примеры работ</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="resume_page">
+				<div class="header">
+					<div class="text_content">
+						<h1>Круть Александр Анатольевич</h1>
+						<div class="about">
+							<p>25.06.1986</p>
+							<p>Днепропетровск</p>
+							<p>(095) 728 08 43</p>
+							<a href="mailto:krruut@gmail.com">krruut@gmail.com</a>
+							<p>Skype: <a href="skype:st.roga?chat">st.roga</a></p>
+						</div>
+					</div>
+					<div class="foto">
+						<img src="new_img/me.png" width="250" height="250">
+					</div>
+				</div>
+				<div class="resume_content">
+					<div class="skills">
+						<h3>Профессиональные навыки</h3>
+						<p>
+							html, css, javascript, jQuery
+						</p>
+						<ol>Дополнительные навыки:
+							<li>git (в рамках создания репозитория, веток, githab pages)</li>
+							<li>cms (joomla)</li>
+						</ol>
+					</div>
+					<div class="courses">
+						<h2>Курсы</h2>
+						<p>
+							Окончил курсы javascript в "Maxymiser Academy". Во время обучения выполнял различные задания, реализация которых прилагается 
+							<a href="#tasks"> &nbsp;>>.</a>
+						</p>
+						<p>Двухгодичные курсы английского языка при ДНУ им. О. Гончара.</p>
+					</div>
+					<div class="education">
+						<h2>Образование</h2>
+						<p>
+							ДНУ им.О.Гончара</br>
+							физико-технический факультет</br>
+							2003 - 2009
+						</p>
+					</div>
+				</div>
+			</div> 
+			<div class="code_page hide">
+				<div class="links">
+					<h2>Примеры работ</h2>
+					<ul>
+						<li>
+							<p>1. Реализовать галерею</p>
+							<p>Требования:</p>
+							<ol>
+								<li>Использовать разные изображения для превьюшек и большого изображения (в этом и заключается цимес)</li>
+								<li>Автоматически листать на следующее изображение через 5 секунд</li>
+								<li>Не листать галерею после того, как пользователь кликнул на одну из превьюшек</li>
+								<li>Количество галерей на странице может быть любым</li>
+								<li>Количество изображений в галерее может быть любым</li>
+								<li>Галерею можно листать с клавиатуры. Но только одну из всех галерей на странице. Листается та, с которой пользователь работал в последний раз. Или над которой находится мышка в данный момент.</li>
+								<li>Должно работать в 8 ие.</li>
+							</ol>
+							<p>Реализация:&nbsp;<a href="Prototypes/index.html">Галерея&nbsp;</a> <span>Код:&nbsp;<a href="Prototypes/css/main.css">Css&nbsp;</a> <a href="Prototypes/js/main.js">JavaScript</a></span></p>
+						</li>
+
+						<li>
+							<p>2. Реализовать многоуровневое контекстное меню как в Windows. Открываться должно по правой кнопке в любой части страницы. </p>
+							<p>Реализация:&nbsp;<a href="Context menu/index.html">Контекстное меню&nbsp;</a> <span>Код:&nbsp;<a href="Context menu/css/main.css">Css&nbsp;</a> <a href="Context menu/js/main.js">JavaScript</a></span></p>
+						</li>
+						<li>
+							<p>3. Реализовать инпут (слайдер). Библиотеку jquery не использовать. Подписку на события слайдера сделать через свой метод on.</p>
+							<p>Реализация:&nbsp;<a href="slider/index.html">Слайдер&nbsp;</a> <span>Код:&nbsp;<a href="slider/css/style.css">Css&nbsp;</a> <a href="slider/js/slider.js">JavaScript</a></span></p>
+						</li>
+						<li>
+							<p>4. Реализовать инпут-пароль, в момент ввода проверять сложность вводимого пароля. Сложность градировать по 5-бальной шкале. Показывать уровень сложности пароля под полем ввода. Детали реализации функции проверки сложности пароля не интересны (можно считать количество символов, например).
+							</p>
+							<p>Написать валидатор, который будет проверять верность вводимого email-а. Каждую ошибку сопровождать соответствующим сообщением. Возможные ошибки: не заполненное поле, не валидный email, уже занятый email. Предполагаем, что список занятых email-лов есть, и он хранится в глобальной переменной.
+							</p>
+							<p>Реализация:&nbsp;<a href="Forms/index.html">Email и Password валидация&nbsp;</a> <span>Код:&nbsp;<a href="Forms/css">Css&nbsp;</a> <a href="Forms/js">JavaScript</a></span></p>
+						</li>
+						<li>
+							<p>5. Реализовать функционал подобный этому:
+								<a href="http://jscourses.github.io/simple-shop/">Пример</a>
+								. Плюс, дополнить его следующими возможностями:
+								<ol>
+									<li>сортировка таблицы продуктов (по имени, цене)</li>
+									<li>запоминание открытой вкладки через url</li>
+									<li>удаление продуктов из корзины</li>
+									<li>запоминание продуктов в корзине (после перезагрузки корзина не должна сбрасываться)</li>
+								</ol>
+							</p>
+							<p>Реализация:&nbsp;<a href="market/index.html">Вэб-магазин&nbsp;</a><span>Код:&nbsp;<a href="market/css">Css&nbsp;</a> <a href="market/javascript">JavaScript</a></span></p>
+						</li>
+						<li>
+							<p>6. Превратить меню хабры в меню из табов.</p>
+							<p><span>Код:&nbsp; <a href="iFrames/habr.js">JavaScript</a></span></p>
+						</li>
+						<li>
+							<p>7. Получить данные о продуктах на розетке с других страниц категории.</p>
+							<p><span>Код:&nbsp; <a href="Ajax/rozetka.js">JavaScript</a></span></p>
+						</li>
+						<li>
+							<p>8. Сделать "бесконечную" ленту из комиксов на <a href="http://www.explosm.net/comics/3305/">http://www.explosm.net/comics/3305</a>.</p>
+							<p><span>Код:&nbsp; <a href="Ajax/comics.js">JavaScript</a></span></p>
+						</li>
+						<li>
+							<p>9. Выбрать понравившийся дизайн на <a href="http://www.mezzoble.com/zengarden/alldesigns">http://www.mezzoble.com/zengarden/alldesigns</a>. Реализовать такой же с уже заданным HTML (менять нельзя, javascript использовать нельзя).</p>
+							<p>Реализация:&nbsp;<a href="Zen/index.html">Верстка&nbsp;</a> <span>Код:&nbsp;<a href="Zen/css">Css&nbsp;</a></span></p>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
