@@ -1,0 +1,21 @@
+[{
+        "name": "pan",
+        "price": 94,
+        "quantity": 2
+    }, {
+        "name": "poultry roaster",
+        "price": 120,
+        "quantity": 1
+    }, {
+        "name": "thermos",
+        "price": 103,
+        "quantity": 3
+    },{
+        "name": "salad dish",
+        "price": 120,
+        "quantity": 21
+    },{
+        "name": "sacepan",
+        "price": 230,
+        "quantity": 14
+    }]
